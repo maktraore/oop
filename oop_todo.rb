@@ -1,4 +1,5 @@
 require_relative "list"
+# require "./list"
 require_relative "task"
 
 # Create list
@@ -33,3 +34,9 @@ list.tasks[0].complete!
 # Print out the incomplete tasks again
 puts "Incomplete Tasks:"
 puts list.incomplete_task_names
+
+puts list.tasks[0].complete
+list.tasks[0].toggle_complete!
+puts list.tasks[0].complete
+list.tasks[0].toggle_complete!
+puts list.tasks[0].complete
